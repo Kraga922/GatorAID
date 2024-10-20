@@ -50,6 +50,15 @@ python3 app2.py
 
 To achieve the best results, ensure that you have a well-lit area with minimal clutter. Position your camera at a height that captures your full body during exercises.
 
+## Showcase
 
+![](./images/showcase1.webp)
 
+![](./images/showcase2.webp)
+
+![](./images/showcase3.webp)
+
+![](./images/showcase4.webp)
+
+![](./images/showcase5.webp)
 
