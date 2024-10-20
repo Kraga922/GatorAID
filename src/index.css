@@ -1,13 +1,290 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Make app fullscreen */
+body > #root > div {
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+/**** BEGINNING OF CUSTOM CSS ****/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.dark {
+    background-color: #1f2937;
+    margin: 0%;
+}
+
+.text {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "Roboto";
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+/* Make app full screen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.app-container {
+  display: flex;          /* or use grid */
+  height: 100vh;          /* full viewport height */
+  width: 100vw;           /* full viewport width */
+}
+
+/* Remove bullet points */
+.bulletpoint {
+  list-style-type: none;
+  text-indent: 2%;
+}
+
+
+/****** NAVIGATION BAR ******/
+.nav-bar {
+  padding-top: 25px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 25px;
+}
+
+.nav-bar .secondary-text {
+    flex: 1;
+}
+
+.header-text {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bold;
+}
+
+.nav-bar .links {
+    flex: 1;
+
+    /* flex container */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.links .link-item {
+  margin: 15px;
+}
+
+/**** HERO SECTION ****/
+
+.secondary-text {
+  font-weight: normal;
+  font-size: 18px;
+  color: black;
+}
+
+.hero-main {
+  margin-top: 50px;
+  margin-bottom: 0%;
+  padding-top: 50px;
+  padding-bottom: 150px;
+
+  /* flex container */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffffff;
+}
+
+.text .secondary-text, .text h1 {
+  margin-bottom: 15px;
+}
+
+.hero-main .text {
+  flex: auto;
+  color: black;
+}
+
+.hero-main .image img {
+  max-width: 100%;
+  height: auto;
+
+  /* Maintain aspect ratio */
+  flex: auto;
+  /* Allow images to grow and shrink */
+  object-fit: cover;
+
+  /* Rounded corners */
+  border-radius: 25px;
+}
+
+.hero-main .hero-main-text {
+  font-size: 48px;
+  font-weight: bolder;
+  color: black;
+}
+
+.button {
+  padding: 7.5px 30px 7.5px 30px;
+  border-radius: 10px; /* rounded corners */
+  border: 0px;
+
+  /* text for button */
+  font-weight: normal;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.button.button-filled {
+  background-color: #3882f6;
+  color: #e5e7eb;
+}
+
+/** MIDDLE AREA **/
+
+.light h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  text-align: center;
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+/* flex container for boxes on page */
+.light .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+
+  margin-bottom: 100px;
+}
+
+/*** FOOTER ***/
+.footer .text {
+  color: #f9faf8;
+  text-align: center;
+  font-size: 18px;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* flex box in the body */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* or flex-start, center, etc. */
+  align-items: flex-start; /* or flex-start, flex-end, etc. */
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  margin-left: 5%;
+  margin-right: 15%;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+/* Make a square for Camera */
+.camera {
+  background-color: #555;
+  color: white;
+  padding-bottom: 50%;
+  aspect-ratio: 1 / 1;
+
+  /* Center text */
+  display:table-cell;
+  vertical-align:middle;
+
 }

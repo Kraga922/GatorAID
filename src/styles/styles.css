@@ -1,0 +1,257 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.dark {
+    background-color: #1f2937;
+    margin: 0%;
+}
+
+.text {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: "Roboto";
+}
+
+
+/****** NAVIGATION BAR ******/
+.nav-bar {
+  padding-top: 25px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 25px;
+}
+
+.nav-bar .secondary-text {
+    flex: 1;
+}
+
+.header-text {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bold;
+}
+
+.nav-bar .links {
+    flex: 1;
+
+    /* flex container */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.links .link-item {
+  margin: 15px;
+}
+
+/**** HERO SECTION ****/
+
+.secondary-text {
+  font-weight: normal;
+  font-size: 18px;
+  color: black;
+}
+
+.hero-main {
+  margin-top: 50px;
+  margin-bottom: 0%;
+  padding-top: 50px;
+  padding-bottom: 150px;
+
+  /* flex container */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffffff;
+}
+
+.text .secondary-text, .text h1 {
+  margin-bottom: 15px;
+}
+
+.hero-main .text {
+  flex: auto;
+  color: black;
+}
+
+.hero-main .image img {
+  max-width: 100%;
+  height: auto;
+
+  /* Maintain aspect ratio */
+  flex: auto;
+  /* Allow images to grow and shrink */
+  object-fit: cover;
+
+  /* Rounded corners */
+  border-radius: 25px;
+}
+
+.hero-main .hero-main-text {
+  font-size: 48px;
+  font-weight: bolder;
+  color: black;
+}
+
+.button {
+  padding: 7.5px 30px 7.5px 30px;
+  border-radius: 10px; /* rounded corners */
+  border: 0px;
+
+  /* text for button */
+  font-weight: normal;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.button.button-filled {
+  background-color: #3882f6;
+  color: #e5e7eb;
+}
+
+/** MIDDLE AREA **/
+
+.light h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  text-align: center;
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+/* flex container for boxes on page */
+.light .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+
+  margin-bottom: 100px;
+}
+
+.list .list-item {
+  flex: none;
+}
+
+/* Constructs box for each image item on the webpage */
+.list .image-item {
+  border: 5px solid #3882f6;
+  border-radius: 15px;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  color: white;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-item img {
+  width: 70%;
+}
+
+.caption {
+  /* IMPORTANT: Make sure .inline-size and height and width of box are same size! */
+  inline-size: 150px;
+  overflow-wrap: break-word;
+  text-align: center;
+  color: #555f6b;
+}
+
+/*** QUOTE ***/
+
+.quote-box {
+  background-color: #e5e7eb;
+}
+
+.quote-box .quote {
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.quote-box .author {
+  text-align: right;
+  padding-top: 15px;
+}
+
+.quote-box .original-text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote-box .author {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*** ACTION BOX ***/
+
+.light .action-area {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.action-box {
+  margin-left: 15%;
+  margin-right: 15%;
+
+  width: auto;
+  height: 150px;
+
+  /* Color of box and text */
+  background-color: #3882f6;
+  color: #e5e7eb;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 10%;
+  padding-right: 10%;
+
+  font-family: "Roboto";
+}
+
+.action-box .action-text {
+  flex: 5;
+}
+
+.action-box .sign-up-button {
+  flex: 1;
+  text-align: center;
+
+  border: 3px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 5px 0px 5px 0px;
+
+}
+
+
+/*** FOOTER ***/
+.footer .text {
+  color: #f9faf8;
+  text-align: center;
+  font-size: 18px;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
