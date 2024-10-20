@@ -27,13 +27,29 @@ You need to install the following Python libraries:
     git clone https://github.com/Kraga922/GatorAID
     ```
 
-### Navigate to the Directory
+
+3. Navigate to the Directory
 
 Change to the directory where the GatorAID folder was downloaded:
 
-### Camera Setup
-To achieve the best results, ensure that you have a well-lit area with minimal clutter. Position your camera at a height that captures your full body during exercises.
-
 ```bash
 cd GatorAID
+```
+
+4. Install the project requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+5. Run the app
+
+```bash
+python3 app2.py
+```
+
+To achieve the best results, ensure that you have a well-lit area with minimal clutter. Position your camera at a height that captures your full body during exercises.
+
+
+
 
