@@ -52,7 +52,6 @@ To achieve the best results, ensure that you have a well-lit area with minimal c
 
 ## Showcase
 
-![](./images/showcase1.webp)
 
 ![](./images/showcase2.webp)
 
